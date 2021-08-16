@@ -73,9 +73,9 @@ jobs:
           sudo apt-get -y --purge remove "adoptopenjdk-11-hotspot"
           java -version
 
-      - name: 制作AB型GSI...
+      - name: 制作A-Only型GSI...
         run: |
-          sudo bash $GITHUB_WORKSPACE/Tool-SGSI-build/make.sh AB << EOF
+          sudo bash $GITHUB_WORKSPACE/Tool-SGSI-build/make.sh A << EOF
           ${{ github.event.inputs.ZIP_NAME }}
           y
           y
